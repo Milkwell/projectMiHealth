@@ -17,10 +17,6 @@ header {
     padding-right: 5%;
 }
 
-/*nav {
-    /*background-color: deepskyblue;
-}*/
-
 a {
     color: black;
 }
@@ -31,6 +27,10 @@ img {
     display: flex;
 }
 
+h3 {
+    padding: auto;
+}
+
 .main {
     width: 90%;
     margin: 0 auto;
@@ -39,50 +39,63 @@ img {
 .content {
     background-color: #dcdcdc;
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    position: relative;
+    height: auto;
     padding-top: 75px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
-/*.left {
-    /*background-color: blueviolet;
-}*/
+    .left {
+        /* background-color: blueviolet; */
+        flex-wrap: wrap;
+        width: 25%;
+    }
 
 .right {
     /*background-color: red;*/
-    position: relative;
+    /* width: 75%; */
+    width: 75%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
+.funny {
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+    position: relative;
+    top: -80px;
+}
 .adjective {
     background-color: white;
-    /*position: absolute;
-    bottom: 0;
-    right: 0;*/
+    height: 40px;
+    margin: 0;
 }
 
 .meal {
-    background-color: rgb(119, 224, 39);
-    /*position: absolute;
-    bottom: 0;
-    right: 0;*/
+    background-color: rgb(110, 206, 36);
+    height: 40px;
+    margin: 0;
+    padding-right: 30px;
+    /* width: 150%; */
 }
 
-.right {
-    justify-content: center;
-    align-items: center;
-}
-/*
-.breakfast {
-    /*background-color: chartreuse;
+.text {
+    width: 10%;
 }
 
-.lunch {
-    /*background-color: aqua;
+
+#arrow {
+    width: 30px;
+    height: 20px;
 }
 
-.dinner {
-    /*background-color: pink;
-}*/
+#red {
+    color: rgb(219, 0, 0);
+}
+
+#green {
+    color: rgb(110, 206, 36);
+}
